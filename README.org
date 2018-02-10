@@ -1,0 +1,96 @@
+* Null Space Labs
+
+  [[http://032.la][Null Space Labs]] (or =NSL=) is a [[http://hackerspaces.org/][hacker space]] in Los Angeles, California.
+
+** When are classes held at NSL?
+  
+  Just about every Saturday a class is held.
+  
+  Check out the [[http://www.meetup.com/NullSpaceLabs/events/][events on MeetUp]] to see what is upcoming.
+
+** Where is NSL?
+
+   We are located at [[https://www.google.com/maps/place/10717+W+Chandler+Blvd,+North+Hollywood,+CA+91601][10717 West Chandler Blvd in North Hollywood, California]]:
+
+   - Check https://www.google.com/maps/place/10717+W+Chandler+Blvd,+North+Hollywood,+CA+91601
+
+* Git Classes
+
+** How much does the class cost?
+
+   Git classes vary in price from $40 to $80 each depending on the complexity of the course primarily.
+
+   | Level                    | Class               | Cost |
+   |--------------------------+---------------------+------|
+   | Software Engineering 101 | Beginning Git       | $40  |
+   | Software Engineering 201 | Advanced Git        | $80  |
+
+   You can pay at the door in cash or other electronic methods on site.
+
+** Prepare your computer before the class
+
+    - Install the latest [[https://git-scm.com/downloads][git from git-scm.com]]
+
+      - https://git-scm.com/downloads
+
+      - OR install the latest git package available through your operating system's package management
+
+      - As long as it's at least version 2 or greater we should be close
+
+    - Have your editor of choice or IDE ready to go
+
+    - OR just bring an SSH client (Mac, Linux already has it, use [[http://www.chiark.greenend.org.uk/~sgtatham/putty/download.html][PuTTY]] on Windows)
+
+      -  With SSH we will provide you a shell with git and some editors
+
+    - OR *NEW* just bring a Web Browser ([[https://www.mozilla.org/en-US/firefox/new/][Firefox]] and [[https://www.google.com/chrome/browser/][Chrome]] should work almost everywhere)
+
+** Prepare your brain before the class
+
+    - https://git-scm.com/book/en/v2
+
+    - https://www.gitbook.com/book/gitbookio/progit/details
+
+* [[https://www.meetup.com/NullSpaceLabs/events/246980718/][Software Engineering 101: Introduction to Git]]
+
+  Learn all about revision control with git, the tool you are encouraged to curse at.
+  
+  This is the first class in a series of two software engineering classes appropriate for any hackers interested in computer programming and software development.
+  
+  This class is graciously hosted by NSL Keyholder Merlin!
+
+** What will we cover?
+   
+   Practical revision control basics with git.
+   
+*** Topics we'll cover
+
+    - Why get good with git?
+
+    - What's wrong with git?
+
+    - What's right with git?
+
+    - How to git (ensuring everyone has some kind of working git installation before we start)
+
+    - Publishing a static website on github
+
+    - Continuous Integration with gitlab
+
+* Software Engineering 201: Advanced Git
+
+  Learn all about revision control with git, the tool you are encouraged to curse at.
+  
+  This is the second class in a series of two software engineering classes appropriate for any hackers interested in computer programming and software development.
+  
+  This class is graciously hosted by NSL Keyholder Merlin!
+
+** What will we cover?
+
+   This class is currently unspecified!
+
+** How much does the class cost?
+
+   This class costs $80 for anyone who isn't a member of Null Space Labs.
+
+   You can pay at the door in cash or other electronic methods on site.
