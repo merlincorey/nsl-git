@@ -51,7 +51,7 @@
 
     - https://www.gitbook.com/book/gitbookio/progit/details
 
-* [[https://www.meetup.com/NullSpaceLabs/events/246980718/][Software Engineering 101: Introduction to Git]]
+* [[file:classes/software-engineering-101-introduction-to-git/index.org][Software Engineering 101: Introduction to Git]]
 
   Learn all about revision control with git, the tool you are encouraged to curse at.
   

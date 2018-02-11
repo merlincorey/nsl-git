@@ -1,0 +1,114 @@
+* Software Engineering 101: Introduction to Git
+
+  Welcome to *NSL 3.0's* class *Software Engineering 101: Introduction to Git* where you, the aspiring git Hacker will watch, learn, and do in your quest to revise code in an ordered manner.
+
+  This is a beginner's introduction but hopefully you at least have a copy of [[https://git-scm.com/downloads][git]] *version 2* or greater available to you and an editor of some kind (for later).
+
+* git
+
+  - /git/ :: /noun/ =BRITISH= an unpleasant or contemptible person
+
+    #+CAPTION: Linus Torvalds explains why he named the software "git", British slang meaning "a rotten person,"
+    #+BEGIN_QUOTE
+    I'm an egotistical bastard, so I name all my projects after myself. First Linux, now git.
+    -- Linus Torvalds
+    #+END_QUOTE
+
+** References
+
+   - [[https://git-scm.com/book/en/v2][Git SCM Book]]
+
+** Social coding
+
+   - [[https://github.com/nikolas/github-drama][Github Drama]]
+   - [[https://github.com/antirez/redis/issues/3185][Replace "master" and "slave" terms in Redis #3185]]
+
+* Why
+
+  #+CAPTION: This is the reason why
+  #+attr_html: :width 800px
+  [[file:images/the-real-version-control.png]]
+
+** Comics
+
+   #+CAPTION: Yes, you do
+   #+attr_html: :width 800px
+   [[file:images/2009-01-26-who-needs-git.png]]
+
+   #+CAPTION: Punny but don't let this be you
+   #+attr_html: :width 800px
+   [[file:images/source_control_angriestprogrammer_com.png]]
+
+   #+CAPTION: Baby steps
+   [[file:images/xkcd-1597-git.png]]
+
+   #+CAPTION: Squashing and Rebasing preferred
+   [[file:images/xkcd-1296-git-commit.png]]
+
+** Benefits to you, the Hacker
+
+   - History :: Store your data with all changes through time
+   - Integrity :: Since everything is hashed and full objects stored
+   - Flexibility :: Support the workflow that works for you no matter how custom
+   - Discoverability :: Share your code publicly and maybe get some contributors
+
+* How
+** Git under the hood
+*** [[https://git-scm.com/book/en/v2/Getting-Started-Git-Basics][git book: Getting Started: Git Basics]]
+
+    - =SVN= and =CVS= :: /centralized/ difference-based systems
+    - =SVN= :: Known to corrupt over time, thanks to this architecture
+    - =git= :: by contrast, is /decentralized/ and /snapshot/ based with all data /hashed/ and /packed/
+    - Committed :: The data is safely stored in your local database
+    - Modified :: You have changed the file but have not committed it to your database yet
+    - Staged  :: You have marked a modified file in its current version to go into your next commit snapshot
+    - Working Directory :: The currently being worked on directory tree
+    - Staging Area :: The ready to be committed data
+    - Repository :: The committed data
+
+** Git work flows
+
+   Generally you should go for something like [[https://guides.github.com/introduction/flow/][Github Flow]] in modern times where one is =Continuously Integrating= and =Continuously Deploying=.
+
+   Sometimes, though, you may have needs that are best served by Gitflow or maybe the generalized streams described in [[https://bitbucket.org/yujiewu/hgflow/wiki/Home][hgflow]].
+
+   Specifically, if you need to be able to support a live production product that may need to be /hotfixed/ and deployed without bringing in new changes in the /development/ stream, then you might want to use a more complicated work flow.
+
+*** [[https://www.atlassian.com/git/tutorials/comparing-workflows][Atlassian: Comparing Workflows]]
+*** [[http://nvie.com/posts/a-successful-git-branching-model/][Gitflow: A successful git branching model]]
+**** [[https://github.com/nvie/gitflow][gitflow plugin for git]]
+*** [[http://endoflineblog.com/oneflow-a-git-branching-model-and-workflow][Oneflow]]
+*** [[https://guides.github.com/introduction/flow/][Github Flow]]
+** Git commandline overview
+
+   - =git init= :: Initialize the current directory as a git repository
+   - =git flow init= :: Initialize the current repository as a /gitflow/ repository
+   - =git clone= :: Clone the entire history of a remote repository to a new local repository
+   - =git remote= :: Manage remotes (list, or add)
+   - =git add= :: Add a file in the working directory to the staging area, especially new files
+   - =git commit= :: Commit whatever is in the staging area
+   - =git commit= -a :: Commit whatever is modified after automatically staging it, but not new files
+   - =git branch= :: Manage branches
+   - =git checkout= :: Checkout branches and files
+   - =git checkout= /branchname/ :: Checkout the already existing branch
+   - =git checkout= -b /branchname/ :: Checkout a *new* branch based on the current branch
+   - =git checkout= /filename/ :: Checkout a file from the repository and replace the copy in the working directory
+   - =git push= :: Push tags, branches, and commits to a remote (usually /origin/)
+   - =git push= /remote/ /branchname/ :: Push /branchname/ branch commits to the remote named /remote/
+   - =git push= --tags :: Push tags to a remote
+   - =git fetch= :: Fetch tags, branches, and commits from a remote
+   - =git merge= /branchname/ :: Merge a given branch into the current branch
+   - =git merge= --squash /branchname/ :: Squash merge a given branch into the current branch
+   - =git pull= :: Perform a =fetch= and =merge= on the current branch against any tracked upstreams
+   - =git rebase= :: Perform a =rebase= of unpushed commits
+   - =git rebase= -i :: Perform an /interactive/ =rebase= of unpushed commits
+
+*** [[https://git-scm.com/book/en/v2/Getting-Started-First-Time-Git-Setup][git book: Getting Started: First Time Git Setup]]
+* What
+** [[https://help.github.com/articles/fork-a-repo/][github help: Fork a Repo]]
+** [[https://help.github.com/articles/syncing-a-fork/][github help: Syncing a Fork]]
+** [[https://help.github.com/articles/about-pull-requests/][github help: Pull Requests]]
+** [[https://help.github.com/articles/configuring-a-publishing-source-for-github-pages/][github help: Publishing to Github Pages]]
+** [[https://www.atlassian.com/git/tutorials/rewriting-history/git-rebase][atlassian: Rewriting History with Git Rebase]]
+** [[https://docs.gitlab.com/ee/ci/README.html][gitlab: Continuous Integration]]
+*** [[https://docs.gitlab.com/ee/ci/yaml/README.html][.gitlab-ci.yml]]
