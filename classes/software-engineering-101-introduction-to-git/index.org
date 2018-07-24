@@ -17,6 +17,7 @@ I'm an egotistical bastard, so I name all my projects after myself. First Linux,
 ** Social coding
    - [[https://github.com/nikolas/github-drama][Github Drama]]
    - [[https://github.com/antirez/redis/issues/3185][Replace "master" and "slave" terms in Redis #3185]]
+   - [[https://github.com/kelseyhightower/nocode/issues][nocode Issues]]
 * Why
   #+CAPTION: This is the reason why
   #+attr_html: :width 800px
