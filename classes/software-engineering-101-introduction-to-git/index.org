@@ -14,9 +14,12 @@ I'm an egotistical bastard, so I name all my projects after myself. First Linux,
 #+END_QUOTE
 ** References
    - [[https://git-scm.com/book/en/v2][Git SCM Book]]
+   - [[https://github.com/ndp/git-cheatsheet][Interactive Git Cheatsheet]]
 ** Social coding
    - [[https://github.com/nikolas/github-drama][Github Drama]]
    - [[https://github.com/antirez/redis/issues/3185][Replace "master" and "slave" terms in Redis #3185]]
+     - [[https://github.com/antirez/redis/issues/5335][Changing Redis Master-slave replication terms with something else #5335]]
+   - [[https://github.com/python/cpython/pull/9101][bpo-34605: Avoid master/slave terms #9101]]
    - [[https://github.com/kelseyhightower/nocode/issues][nocode Issues]]
 * Why
   #+CAPTION: This is the reason why
